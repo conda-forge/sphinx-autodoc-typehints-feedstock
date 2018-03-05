@@ -20,12 +20,12 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
     - sphinx >=1.4
 
   run:
-    - python
+    - python >=3
     - sphinx >=1.4
 
 test:
