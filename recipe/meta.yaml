@@ -7,21 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/agronholm/sphinx-autodoc-typehints/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - remove_extras.patch
 
 build:
-  skip: True  # [py2k]
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  skip: True  # [py2k]
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - sphinx >=1.4
 
   run:
