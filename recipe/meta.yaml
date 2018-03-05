@@ -13,6 +13,7 @@ source:
     - remove_extras.patch
 
 build:
+  noarch: python
   number: 0
   skip: True  # [py2k]
   script: python -m pip install --no-deps --ignore-installed .
