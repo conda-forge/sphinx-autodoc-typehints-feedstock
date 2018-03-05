@@ -1,6 +1,6 @@
 {% set name = "sphinx-autodoc-typehints" %}
-{% set version = "1.2.3" %}
-{% set sha256 = "91c3bc19521ebebf366b81ea8915e87ac9430fb07f896c85afae4e0d967c2016" %}
+{% set version = "1.2.5" %}
+{% set sha256 = "3f017b939783839f15aab141824674c158c16d3e62e9ea30c081e49b506ffadc" %}
 
 package:
   name: {{ name|lower }}
