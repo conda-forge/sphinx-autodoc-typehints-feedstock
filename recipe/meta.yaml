@@ -1,31 +1,31 @@
 {% set name = "sphinx-autodoc-typehints" %}
-{% set version = "1.2.3" %}
-{% set sha256 = "91c3bc19521ebebf366b81ea8915e87ac9430fb07f896c85afae4e0d967c2016" %}
+{% set version = "1.2.5" %}
+{% set sha256 = "3f017b939783839f15aab141824674c158c16d3e62e9ea30c081e49b506ffadc" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/agronholm/sphinx-autodoc-typehints/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - remove_extras.patch
 
 build:
-  skip: True  # [py2k]
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  skip: True  # [py2k]
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3
+    - pip
     - sphinx >=1.4
 
   run:
-    - python
+    - python >=3
     - sphinx >=1.4
 
 test:
