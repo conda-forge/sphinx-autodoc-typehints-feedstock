@@ -14,7 +14,8 @@ Summary: Type hints (PEP 484) support for the Sphinx autodoc extension
 Current build status
 ====================
 
-All platforms: ![noarch disabled](https://img.shields.io/badge/noarch-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sphinx-autodoc-typehints-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sphinx-autodoc-typehints-feedstock)
 
 Current release info
 ====================
