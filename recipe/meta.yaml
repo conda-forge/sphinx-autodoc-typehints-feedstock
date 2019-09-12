@@ -7,20 +7,18 @@ package:
 source:
   url: https://pypi.io/packages/source/s/sphinx-autodoc-typehints/sphinx-autodoc-typehints-{{ version }}.tar.gz
   sha256: 0d968ec3ee4f7fe7695ab6facf5cd2d74d3cea67584277458ad9b2788ebbcc3b
-  patches:
-    - remove_extras.patch
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
     - sphinx >=1.4
-
+    - setuptools_scm
   run:
     - python >=3
     - sphinx >=1.4
