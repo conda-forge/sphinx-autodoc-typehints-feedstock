@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: sphinx-autodoc-typehints
@@ -6,21 +6,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sphinx-autodoc-typehints/sphinx-autodoc-typehints-{{ version }}.tar.gz
-  sha256: f9c06acfec80766fe8f542a6d6a042e751fcf6ce2e2711a7dc00d8b6daf8aa36
-  patches:
-    - remove_extras.patch
+  sha256: 0d968ec3ee4f7fe7695ab6facf5cd2d74d3cea67584277458ad9b2788ebbcc3b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
     - sphinx >=1.4
-
+    - setuptools_scm
   run:
     - python >=3
     - sphinx >=1.4
