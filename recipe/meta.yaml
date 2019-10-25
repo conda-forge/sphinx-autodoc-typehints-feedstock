@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: sphinx-autodoc-typehints
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sphinx-autodoc-typehints/sphinx-autodoc-typehints-{{ version }}.tar.gz
-  sha256: 0d968ec3ee4f7fe7695ab6facf5cd2d74d3cea67584277458ad9b2788ebbcc3b
+  sha256: 0dfd26be5b81049ce81b644913a06a12795ded2791adc0a4e13420eb9a832852
 
 build:
   number: 0
