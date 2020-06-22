@@ -11,21 +11,25 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3
+    - python >=3.5
     - pip
-    - sphinx >=1.4
-    - setuptools_scm
+    - setuptools >=36.2.7
+    - setuptools_scm >=1.7.0
   run:
-    - python >=3
-    - sphinx >=1.4
+    - python >=3.5
+    - sphinx >=3.0
 
 test:
   imports:
     - sphinx_autodoc_typehints
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/agronholm/sphinx-autodoc-typehints
