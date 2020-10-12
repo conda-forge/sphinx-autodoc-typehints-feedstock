@@ -5,11 +5,9 @@ Home: https://github.com/agronholm/sphinx-autodoc-typehints
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autodoc-typehints-feedstock/blob/master/LICENSE.txt)
 
 Summary: Type hints (PEP 484) support for the Sphinx autodoc extension
-
-
 
 Current build status
 ====================
