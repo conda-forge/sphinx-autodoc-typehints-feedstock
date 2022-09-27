@@ -17,11 +17,11 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - setuptools >=36.2.7
-    - setuptools_scm >=1.7.0
+    - hatchling >=1.10
+    - hatch-vcs >=0.2
   run:
     - python >=3.7
-    - sphinx >=4.5
+    - sphinx >=5.2.1
 
 test:
   imports:
@@ -32,10 +32,10 @@ test:
     - pip
 
 about:
-  home: https://github.com/tox-dev/sphinx-autodoc-typehints
+  home: https://pypi.org/project/sphinx-autodoc-typehints/
+  summary: Type hints (PEP 484) support for the Sphinx autodoc extension
   license: MIT
   license_file: LICENSE
-  summary: Type hints (PEP 484) support for the Sphinx autodoc extension
   license_family: MIT
 
 extra:
