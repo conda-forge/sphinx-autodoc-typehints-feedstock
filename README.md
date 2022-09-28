@@ -1,7 +1,7 @@
 About sphinx-autodoc-typehints
 ==============================
 
-Home: https://github.com/tox-dev/sphinx-autodoc-typehints
+Home: https://pypi.org/project/sphinx-autodoc-typehints/
 
 Package license: MIT
 
