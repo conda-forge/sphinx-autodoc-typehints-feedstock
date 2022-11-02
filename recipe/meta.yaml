@@ -21,7 +21,7 @@ requirements:
     - hatch-vcs >=0.2
   run:
     - python >=3.7
-    - sphinx >=5.2.1
+    - sphinx >=5.3
 
 test:
   imports:
