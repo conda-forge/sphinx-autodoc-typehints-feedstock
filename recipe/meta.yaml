@@ -1,24 +1,25 @@
-{% set version = "1.23.4" %}
+{% set name = "sphinx-autodoc-typehints" %}
+{% set version = "1.21.8" %}
 
 package:
-  name: sphinx-autodoc-typehints
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sphinx-autodoc-typehints/sphinx_autodoc_typehints-{{ version }}.tar.gz
-  sha256: b47c3a690d101a259d9aa920cc57c7ea79fb705d796c0d57cb17e99bd1d80a34
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx_autodoc_typehints-{{ version }}.tar.gz
+  sha256: 68e7136403ca67359d7beaab4d358cea518623abe749cc4e0639609aebf2f5c7
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
     - python >=3.7
+    - hatchling >=1.12.2
+    - hatch-vcs >=0.3
     - pip
-    - hatchling >=1.10
-    - hatch-vcs >=0.2
   run:
     - python >=3.7
     - sphinx >=5.3
@@ -34,10 +35,11 @@ test:
 about:
   home: https://pypi.org/project/sphinx-autodoc-typehints/
   summary: Type hints (PEP 484) support for the Sphinx autodoc extension
+  dev_url: https://github.com/tox-dev/sphinx-autodoc-typehints
   license: MIT
   license_file: LICENSE
-  license_family: MIT
 
 extra:
   recipe-maintainers:
     - kwilcox
+    - ocefpaf
