@@ -1,13 +1,15 @@
-About sphinx-autodoc-typehints
-==============================
+About sphinx-autodoc-typehints-feedstock
+========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autodoc-typehints-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/sphinx-autodoc-typehints/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autodoc-typehints-feedstock/blob/main/LICENSE.txt)
-
 Summary: Type hints (PEP 484) support for the Sphinx autodoc extension
+
+Development: https://github.com/tox-dev/sphinx-autodoc-typehints
 
 Current build status
 ====================
@@ -144,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@kwilcox](https://github.com/kwilcox/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 
