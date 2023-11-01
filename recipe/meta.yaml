@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - hatchling >=1.17.1
+    - hatchling >=1.18
     - hatch-vcs >=0.3
     - pip
   run:
