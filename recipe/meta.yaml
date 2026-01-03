@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "sphinx-autodoc-typehints" %}
 {% set version = "3.6.2" %}
 
@@ -18,8 +18,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling >=1.25
-    - hatch-vcs >=0.4
+    - hatch-vcs >=0.5
+    - hatchling >=1.28
     - pip
   run:
     - python >={{ python_min }}
