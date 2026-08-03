@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "sphinx-autodoc-typehints" %}
-{% set version = "3.13.0" %}
+{% set version = "3.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinx_autodoc_typehints-{{ version }}.tar.gz
-  sha256: 59eb4fe26f71ccd7a8f10caadddcb3c3b31df7016f91bda546da2a333bae4e12
+  sha256: 13c89cd0260b98b416563fa88419f006a355e54309df3e990896d622d84045ca
 
 build:
   noarch: python
