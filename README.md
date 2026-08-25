@@ -3,7 +3,7 @@ About sphinx-autodoc-typehints-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autodoc-typehints-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/sphinx-autodoc-typehints/
+Home: https://github.com/tox-dev/sphinx-autodoc-typehints
 
 Package license: MIT
 
