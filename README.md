@@ -3,7 +3,7 @@ About sphinx-autodoc-typehints-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autodoc-typehints-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/sphinx-autodoc-typehints/
+Home: https://github.com/tox-dev/sphinx-autodoc-typehints
 
 Package license: MIT
 
@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sphinx-autodoc-typehints` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sphinx-autodoc-typehints
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sphinx-autodoc-typehints
 ```
 
-It is possible to list all of the versions of `sphinx-autodoc-typehints` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sphinx-autodoc-typehints
+# for installing globally
+pixi global install sphinx-autodoc-typehints
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sphinx-autodoc-typehints` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sphinx-autodoc-typehints --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sphinx-autodoc-typehints --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sphinx-autodoc-typehints --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds sphinx-autodoc-typehints --channel conda-forge
 # List dependencies of `sphinx-autodoc-typehints`:
 mamba repoquery depends sphinx-autodoc-typehints --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
