@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "3.13.9"
+  version: "3.13.10"
 
 package:
   name: sphinx-autodoc-typehints
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sphinx-autodoc-typehints/sphinx_autodoc_typehints-${{ version }}.tar.gz
-  sha256: f5db988060f68a231dbc230df97d81421e54a0860778a63216b9f71958a9afdd
+  sha256: f73464a09355a9f63b688a5b9093b1c0f56dc4854ea30ca326268e3d5a8e27cd
 
 build:
   number: 0
