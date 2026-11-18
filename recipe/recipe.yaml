@@ -22,7 +22,9 @@ requirements:
     - python ${{ python_min }}.*
     - hatch-fancy-pypi-readme >=25.1
     - hatch-vcs >=0.5
+    # python-sbom[hatch]
     - hatchling >=1.32.4
+    - python-sbom
     - pip
   run:
     - python >=${{ python_min }}
@@ -30,6 +32,7 @@ requirements:
     - typing_extensions >=4.16
     - pygments >=2.17
     - docutils >=0.21
+
 tests:
   - python:
       imports:
