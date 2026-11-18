@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: '3.12'
-  version: "3.17.5"
+  version: 3.17.6
 
 package:
   name: sphinx-autodoc-typehints
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sphinx-autodoc-typehints/sphinx_autodoc_typehints-${{ version }}.tar.gz
-  sha256: 8eaad05b05b765b3bb4c2cf1c1410eacce9d31a156d92cac9eb21a0a9099c90d
+  sha256: d5b8dace7d1b8688869033ab7d5307139b3f02e67d40446e2bafd707a08dad68
 
 build:
   number: 0
@@ -22,12 +22,17 @@ requirements:
     - python ${{ python_min }}.*
     - hatch-fancy-pypi-readme >=25.1
     - hatch-vcs >=0.5
+    # python-sbom[hatch]
     - hatchling >=1.32.4
+    - python-sbom
     - pip
   run:
     - python >=${{ python_min }}
     - sphinx >=9.1
     - typing_extensions >=4.16
+    - pygments >=2.17
+    - docutils >=0.21
+
 tests:
   - python:
       imports:
